@@ -24,6 +24,7 @@ export default class VistaGeneralComponent extends Vue {
 
   //Upload
   fileList2:any[];
+  images:any[];
 
   formBuscar:any;
   dialogImageUrl:string;
@@ -56,6 +57,11 @@ export default class VistaGeneralComponent extends Vue {
 
     //Upload
     this.fileList2= [{name: 'vue', url: 'https://vuejs.org/images/logo.png'}]
+    this.images= [
+      'http://automundo.pe/wp-content/uploads/2017/02/5-factores-considerar-adquiere-camio%CC%81n-pesado.jpg',
+      'http://imageneschidas.mx/wp-content/uploads/2015/10/imagen-de-trailer-rojo-en-la-carretera.jpg',
+      'http://www.tfw2005.com/boards/attachments/g2-optimus-prime-alt-mode1-jpg.27095864/'
+    ];
     //this.fileList2=[];
 
     this.Auth= new Auth0;

@@ -1,6 +1,16 @@
 <template>
 
   <div class="container">
+    <template>
+      <div class="block">
+        <el-carousel height="300px">
+          <el-carousel-item v-for="image in images" :key="image" :style="{ backgroundImage: 'url(' + image + ')' }"
+            style="background-size: 100% 300px;">
+          </el-carousel-item>
+        </el-carousel>
+      </div>
+    </template>
+    <br>
 
     <el-row class="busqueda">
       <el-form :model="formBuscar">
@@ -89,7 +99,6 @@ export default VistaGeneral
 
 <!--Dentro del tag style, se puede añadir estilos-->
 <style scoped lang="scss">
-
   .container{
     padding: 5% 8%;
   }

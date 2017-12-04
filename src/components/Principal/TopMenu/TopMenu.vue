@@ -21,10 +21,6 @@
            Publicar
         </el-menu-item>
         
-        <el-menu-item index="4" class="itemMenuV2" @click="goVistaGeneral()">
-            VistaGeneral
-        </el-menu-item>
-        
         <el-menu-item index="5" class="itemMenuV2" @click="goIngresa()">
            Log Out
         </el-menu-item>
